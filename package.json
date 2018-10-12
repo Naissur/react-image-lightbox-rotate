@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Horat1us/react-image-lightbox-rotate.git"
+    "url": "git+https://github.com/Naissur/react-image-lightbox-rotate.git"
   },
   "keywords": [
     "react",
@@ -26,9 +26,9 @@
   "author": "Alexander Letnikow",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Horat1us/react-image-lightbox-rotate/issues"
+    "url": "https://github.com/Naissur/react-image-lightbox-rotate/issues"
   },
-  "homepage": "https://github.com/Horat1us/react-image-lightbox-rotate#readme",
+  "homepage": "https://github.com/Naissur/react-image-lightbox-rotate#readme",
   "dependencies": {
     "prop-types": "^15.6.0",
     "react-image-lightbox": "^4.3.0"
