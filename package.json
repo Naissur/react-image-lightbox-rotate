@@ -1,5 +1,5 @@
 {
-  "name": "react-image-lightbox-rotate",
+  "name": "react-image-lightbox-rotate-fixed",
   "version": "1.2.1",
   "description": "Rotate wrapper for react-image-lightbox",
   "main": "dist/umd/react-image-lightbox.js",
