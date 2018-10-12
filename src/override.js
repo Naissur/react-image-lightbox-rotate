@@ -10,11 +10,16 @@ export const changeAngle = (newAngle) => {
 
 const parentTransform = ReactImageLightbox.getTransform;
 ReactImageLightbox.getTransform = (args) => {
-    const
-        parent = parentTransform(args);
+    const parent = parentTransform(args);
+
+    let transform = `rotate(${angle}deg)`;
+
+    if (angle === 90 || angle === 270) {
+        transform += ` scale(${args.height / args.width})`;
+    }
 
     if (angle && angle !== 0) {
-        parent[Object.keys(parent)[0]] += `rotate(${angle}deg)`;
+        parent[Object.keys(parent)[0]] += transform;
     }
 
     return parent;
@@ -26,3 +31,4 @@ Object.assign(ReactImageLightbox.propTypes, {
 });
 
 export default ReactImageLightbox;
+
