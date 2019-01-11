@@ -88,7 +88,7 @@ class ReactImageLightboxRotate extends Component {
     }
 
     handleMoveNext() {
-        if(this.props.onPreMoveNextRequest && this.state.rotate >0 ||  this.state.nextRotate > 0){
+        if(this.props.onPreMoveNextRequest && (this.state.rotate >0 ||  this.state.nextRotate > 0)){
             return () => {
                 if(this.state.nextRotate > 0) {
                     this.preservationRotation(this.state.nextRotate);
@@ -105,7 +105,7 @@ class ReactImageLightboxRotate extends Component {
         }else{
             return () => {
                 this.resetPrevRotation();
-                this.props.onPreMoveNextRequest();
+                this.props.onPreMoveNextRequest && this.props.onPreMoveNextRequest();
             }
         }
     }
